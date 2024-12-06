@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Abishek R, Engineering Student">
+  <title>Portfolio - Abishek R</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header with animated gradient */
+    header {
+      background: linear-gradient(45deg, #ff7e5f, #feb47b, #6a11cb, #2575fc);
+      background-size: 300% 300%;
+      animation: gradientAnimation 8s ease infinite;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header .contact-info {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    nav ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 10px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background: #444;
+      border-radius: 4px;
+    }
+
+    nav .social-icons a {
+      color: #fff;
+      margin: 0 5px;
+      font-size: 18px;
+    }
+
+    .clock {
+      color: #fff;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin: 15px 0;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .education-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    footer a {
+      color: #4a90e2;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Skills Table */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .skills-table th, .skills-table td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .skills-table th {
+      background: #eee;
+    }
+
+    .skills-table td {
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:your-email@example.com" style="color: #fff;">your-email@example.com</a> | Phone: +123 456 7890</p>
+    </div>
+    <h1>Abishek R</h1>
+    <p>Engineering Student | Aspiring Software Developer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="social-icons">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://leetcode.com/yourusername" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
+        <a href="https://instagram.com/yourusername" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/yourphonenumber" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </li>
+    </ul>
+    <div class="clock" id="clock"></div>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Abishek R, a Computer Science and Engineering student passionate about problem-solving, software development, and technology. I aim to leverage my skills for innovative solutions.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <th>Category</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>Programming Languages</td>
+          <td>C++, Java, Python</td>
+        </tr>
+        <tr>
+          <td>Web Development</td>
+          <td>HTML, CSS, JavaScript, Express.js</td>
+        </tr>
+        <tr>
+          <td>Databases</td>
+          <td>MongoDB, MySQL</td>
+        </tr>
+        <tr>
+          <td>Tools</td>
+          <td>Git, VS Code</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <table class="skills-table">
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+          <th>Link</th>
+        </tr>
+        <tr>
+          <td>Portfolio Website</td>
+          <td>A personal portfolio showcasing my skills and projects.</td>
+          <td><a href="#" target="_blank">GitHub Link</a></td>
+        </tr>
+        <tr>
+          <td>Library Management System</td>
+          <td>A web app to manage library books and transactions using MongoDB and Node.js.</td>
+          <td><a href="#" target="_blank">GitHub Link</a></td>
+        </tr>
+        <tr>
+          <td>Weather App</td>
+          <td>A web app providing real-time weather updates using OpenWeather API.</td>
+          <td><a href="#" target="_blank">GitHub Link</a></td>
+        </tr>
+      </table>
+    </section>
+    
+
+    <section id="education">
+      <h2>Education</h2>
+      <h5>College</h5>
+      <img src="college.jpg" alt="College" class="education-img">
+      <p>Bachelor of Technology in Computer Science and Engineering - [Your College Name]</p>
+      <p>Year: 2020 - 2024</p>
+      <h5>School</h5>
+      <img src="school.jpg" alt="School" class="education-img">
+      <p>Higher Secondary School - [Your School Name]</p>
+      <p>Year: 2018 - 2020</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>Phone: +123 456 7890</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Abishek R. All rights reserved.</p>
+    <p>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+      <a href="https://leetcode.com/yourusername" target="_blank">LeetCode</a>
+    </p>
+  </footer>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
